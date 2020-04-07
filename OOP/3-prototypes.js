@@ -8,12 +8,19 @@ function Laptop (model, cpu, ram, rom, price) {
 
 }
 
+// get details prototype
 Laptop.prototype.getDetails = function () {
     return `this is ${this.model} it has ${this.cpu} with ${this.ram} plus ${this.rom} combo`;
 }
 
+// get price discount prototypes
 Laptop.prototype.getPriceDiscount = function () {
     return `the discounted price of your laptop is ${this.price}`;
+}
+
+// revise price prototype
+Laptop.prototype.revise = function (newYear) {
+    return `new price = ${this.price - 5000} for 2020`
 }
 
 // instantiate an object
@@ -23,3 +30,5 @@ const laptop3 = new Laptop('Asus Zenbook UX-331 UA', 'i5' ,'16gb', '250gb SSD', 
 
 console.log(laptop2.getDetails());
 console.log(laptop3.getPriceDiscount());
+console.log(laptop3);
+console.log(laptop3.revise());
