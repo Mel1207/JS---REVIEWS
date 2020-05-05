@@ -33,5 +33,44 @@ easyHttp.prototype.get = function(url, callBack) {
     this.http.send();
 }
 // post an http get request
-// put an http get request
-// delete an http get request
+easyHttp.prototype.post = function (url, data, callBack) {
+    this.http.open('POST', url, true);
+    this.http.setRequestHeader('Content-type', 'application/json');
+
+    // Fix number 2 - Setting new variable place for (this)
+    let self = this;
+    this.http.onload = function () {
+        callBack(null, self.http.responseText) // as you can see we replace (this) for variable self.
+    }
+
+    this.http.send(JSON.stringify(data));
+}   
+
+// make an http put request
+easyHttp.prototype.put = function (url, data, callBack) {
+    this.http.open('PUT', url, true);
+    this.http.setRequestHeader('Content-type', 'application/json');
+
+    // Fix number 2 - Setting new variable place for (this)
+    let self = this;
+    this.http.onload = function () {
+        callBack(null, self.http.responseText) // as you can see we replace (this) for variable self.
+    }
+
+    this.http.send(JSON.stringify(data));
+}   
+// make an http delete request
+easyHttp.prototype.delete = function(url, callBack) {
+    this.http.open('DELETE', url, true);
+    let self = this;
+    this.http.onload = function () {
+        if(self.http.status === 200) {
+            callBack(null, 'Post Deleted');
+        } else {
+            callBack(`Error ${self.http.status} not found`);
+        }
+    }
+
+
+    this.http.send();
+}
