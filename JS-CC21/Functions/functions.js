@@ -6,7 +6,7 @@ function greet () {
 // greet(); /* This is called function caller */
 // greet(); /* This is called function caller */
 
-// function expression
+// function expression - is stored inside a variable
 // notes - function expression needs to have commas at the end
 const speak = function () {
     console.log('Hi mel');
@@ -25,5 +25,5 @@ speak();
 
 // function greet() {
 //     console.log('kamusta mel');
-// } /*even we called the function first the code block stull runs because of hoisting */
+// } /*even we called the function first the code block still runs because of hoisting */
 
