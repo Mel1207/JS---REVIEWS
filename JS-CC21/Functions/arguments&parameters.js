@@ -24,25 +24,3 @@
 
 // const area = calcArea(10);
 // console.log(area);
-
-//  ------------------------------------------------- //
-// regular function 
-// const calcArea = function (radius) {
-//     return 3.14 * radius**2;
-// }
-
-
-// arrow function
-// const calcArea = (radius) => {
-//     return 3.14* radius**2;
-// }
-
-// Shorter arrow function
-// note: this will only work if we have exact 1 parameter and we can remove the parenthesis
-const calcArea = radius => {
-    return 3.14* radius**2;
-}
-
-
-const area = calcArea(10);
-console.log('area is: ', area);
