@@ -9,7 +9,7 @@
 const pContents = document.querySelectorAll('p');
 pContents.forEach(p => {
     // console.log(p.innerText);
-    if (p.innerText.includes('error')) {
+    if (p.innerText.includes('error')) { // .innerText or textContent are both good but textContent is more secured
         // console.log('the paragraph has error')
         p.classList.add('error');
     } else if (p.innerText.includes('success')){
@@ -19,3 +19,8 @@ pContents.forEach(p => {
 });
 
 // console.log(pContents)
+
+const title = document.querySelector('.title');;
+
+title.classList.toggle('test');
+title.classList.toggle('test');
