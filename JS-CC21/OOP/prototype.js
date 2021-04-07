@@ -23,6 +23,6 @@ People.prototype.getAge = function () {
 const people = new People ('Mel', 25, 'Male');
 const people2 = new People ('Juvy', 25, 'Female');
 
-
+ 
 console.log(people.getAge());
 
