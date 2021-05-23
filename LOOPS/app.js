@@ -42,14 +42,14 @@ const books = [
 // })
 
 // filter array
-books.filter((book) => {
+// books.filter((book) => {
 
-    let authoredMel = [];
+//     let authoredMel = [];
 
-    if(book.author === 'Mel') {
-        authoredMel = book.title;
-    }
+//     if(book.author === 'Mel') {
+//         authoredMel = book.title;
+//     }
 
-    console.log(authoredMel)
-})
+//     console.log(authoredMel)
+// })
 
