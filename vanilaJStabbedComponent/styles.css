@@ -72,6 +72,22 @@ button {
     border-radius: 8px;
 }
 
+.tab-active::after {
+    content: "";
+    height: 5px;
+    background: rgb(89, 43, 255);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 8px;
+}
+
+/* V2 button option style */
+/* .tab-active {
+    background: #fff;
+    border-radius: 12px 12px 0 0;
+} */
+
 /* V2 animation - optional */
 
 .tab-active::after {
