@@ -6,10 +6,70 @@
 body {
     font-family: sans-serif;
     color: #000;
+    position: relative;
+    height: 100vh;
+    background: rgb(250, 250, 250);
 }
 
 .container {
     width: 80%;
     max-width: 1300px;
     margin: auto;
+}
+
+.section-vo-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 50%; */
+}
+
+.section-vo-3 h2, h3{
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(39, 39, 39);
+}
+
+h3 {
+    font-size: 25px;
+    color: rgb(116, 116, 116);
+    margin-bottom: 20px;
+}
+
+.tabbed-items-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 400px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+.tab-item-btn::after {
+    content: "";
+    height: 3px;
+    background: rgb(89, 43, 255);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.tab-active::after {
+    width: 100%;
 }
