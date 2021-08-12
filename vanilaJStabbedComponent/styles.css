@@ -70,8 +70,9 @@ button {
     left: 0;
     bottom: 0;
     border-radius: 8px;
-    transition: 0.3s ease;
 }
+
+/* V2 animation - optional */
 
 .tab-active::after {
     animation-name: animate;
