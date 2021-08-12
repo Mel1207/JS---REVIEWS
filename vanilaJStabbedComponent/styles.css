@@ -62,7 +62,7 @@ button {
     position: relative;
 }
 
-.tab-item-btn::after {
+.tab-active::after {
     content: "";
     height: 5px;
     background: rgb(89, 43, 255);
@@ -74,7 +74,14 @@ button {
 }
 
 .tab-active::after {
-    width: 100%;
+    animation-name: animate;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+    0% { width: 0; }
+    100% {width: 100%;}
 }
 
 .tab-items-content {
