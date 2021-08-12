@@ -78,10 +78,15 @@ button {
 }
 
 .tab-items-content {
+    display: none;
     background: #fff;
     width: 100%;
     padding: 50px;
     border-radius: 10px;
+}
+
+.items-content-active {
+    display: block;
 }
 
 .tab-item-header {

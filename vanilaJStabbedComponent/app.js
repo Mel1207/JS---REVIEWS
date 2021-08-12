@@ -17,4 +17,10 @@ tabBtnContainer.addEventListener('click', (e) => {
 
     cliked.classList.add('tab-active');
 
+    tabContent.forEach(tab => {
+        tab.classList.remove('items-content-active');
+    })
+    console.log(cliked.dataset.items)
+    document.querySelector(`.items-content-${cliked.dataset.items}`).classList.add('items-content-active')
+
 })
