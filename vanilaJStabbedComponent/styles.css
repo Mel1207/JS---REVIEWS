@@ -48,6 +48,7 @@ h3 {
 
 button {
     width: 400px;
+    height: 70px;
     cursor: pointer;
     outline: none;
     border: none;
@@ -61,15 +62,35 @@ button {
 
 .tab-item-btn::after {
     content: "";
-    height: 3px;
+    height: 5px;
     background: rgb(89, 43, 255);
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: 0;
     border-radius: 8px;
     transition: 0.3s ease;
 }
 
 .tab-active::after {
     width: 100%;
+}
+
+.tab-items-content {
+    background: #fff;
+    width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.tab-item-header {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(39, 39, 39);
+}
+
+.tab-item-text {
+    font-size: 16px;
+    line-height: 2.0em;
+    color: rgb(97, 97, 97);
 }
