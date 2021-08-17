@@ -19,15 +19,57 @@ body {
     height: 100vh;
     width: 100%;
     /* background: linear-gradient(75.66deg, rgba(178, 131, 255, 0.62) 2.16%, rgba(23, 47, 255, 0.35) 106.36%); */
-    background: linear-gradient(90deg, rgba(179, 131, 255, 0.959) 2.16%, rgba(23, 46, 255, 0.774) 106.36%);
+    /* background: linear-gradient(120deg, rgba(91, 233, 110, 0.76) 2.16%, rgba(23, 46, 255, 0.856) 106.36%); */
+    background: rgba(22, 22, 22, 0.281);
     overflow: hidden;
+}
+
+.section-header .container {
+    position: relative;
+    width: 80%;
+    max-width: 1300px;
+    height: 100vh;
 }
 
 .section-header .video-bg {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    width: 10em;
+    height: 2.5em;
+    border-radius: 30px;
+    background: transparent;
+    background: rgb(215, 129, 255);
+    color: #fff;
+    border: 1px solid rgb(215, 129, 255);
+    cursor: pointer;
+}
+
+.section-header .header-title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-title h1 {
+    font-size: 3.7em;
+    text-transform: uppercase;
+}
+
+.header-title p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7em;
+    margin: 10px 0 25px 0;
 }
