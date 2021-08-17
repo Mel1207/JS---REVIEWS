@@ -107,6 +107,9 @@ button {
     width: 100%;
     padding: 50px;
     border-radius: 10px;
+    box-shadow: 1px 20px 78px 6px rgba(0, 0, 0, 0.03);
+    height: auto;
+    transition: all 0.3s ease;
 }
 
 .items-content-active {
