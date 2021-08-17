@@ -13,3 +13,21 @@ body {
     max-width: 1300px;
     margin: auto;
 }
+
+.section-header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(75.66deg, rgba(178, 131, 255, 0.62) 2.16%, rgba(23, 47, 255, 0.35) 106.36%); */
+    background: linear-gradient(90deg, rgba(179, 131, 255, 0.959) 2.16%, rgba(23, 46, 255, 0.774) 106.36%);
+    overflow: hidden;
+}
+
+.section-header .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
