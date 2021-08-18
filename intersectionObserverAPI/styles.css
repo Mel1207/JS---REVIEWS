@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
 *, html {
     margin: 0;
     padding: 0;
@@ -5,7 +7,9 @@
 }
 body {
     font-family: sans-serif;
-    color: #000;
+    color: rgb(255, 255, 255);
+    background: rgb(16, 11, 19);
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -89,6 +93,47 @@ body {
 }
 
 .header-title p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7em;
+    margin: 10px 0 25px 0;
+}
+
+.section-1 {
+    padding: 10em 0;
+}
+
+.section-1-feature {
+    display: flex;
+    align-items: center;
+}
+
+.section-1-feature img {
+    height: 30em;
+    margin-right: 50px;
+}
+
+.right-aside h3 {
+    font-size: 1.5em;
+    color: rgb(215, 129, 255);
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    position: relative;
+    width: max-content;
+}
+
+.right-aside h3::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 5em;
+    background: rgb(215, 129, 255);
+    right: -140px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-aside p {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.7em;
