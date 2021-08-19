@@ -152,6 +152,32 @@ body {
     margin: 10px 0 25px 0;
 }
 
+.section-4 .section-title {
+    position: relative;
+    font-size: 35px;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 50px;
+    color: rgb(215, 129, 255);
+}
+
+.section-title::before, .section-title::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 5em;
+    background: rgb(215, 129, 255);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-title::before {
+    right: -60%
+}
+
+.section-title::after {
+    left: -60%
+}
 
 .card-container {
     display: flex;
@@ -163,11 +189,13 @@ body {
 
 .card-container .card {
     width: 400px;
-    height: 30em;
+    height: auto;
+    /* height: 30em; */
     background: #201927
 }
 
 .card {
+   
     border-radius: 10px;
 }
 
@@ -179,4 +207,41 @@ body {
 
 .card-body {
     padding: 20px;
+}
+
+.card-body h5 {
+    font-size: 1em;
+    color: rgb(215, 129, 255);
+    text-transform: uppercase;
+    margin-bottom: .2em;
+    position: relative;
+    width: max-content;
+}
+
+.card-body h5::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 3em;
+    background: rgb(215, 129, 255);
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-body h2 {
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    margin: 25px 0 35px 0;
+}
+
+.card-body .btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-main {
+    transform: scale(1.1);
 }
