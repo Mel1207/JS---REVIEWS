@@ -112,7 +112,7 @@ body {
 }
 
 .section {
-    transform: translateY(30%);
+    transform: translateY(15%);
     opacity: 0;
 }
 
