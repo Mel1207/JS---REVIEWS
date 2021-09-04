@@ -1,15 +1,22 @@
 'use strict'
 
-const fetchAPI = async function (height, width) {
-    try {
-        const getData = await fetch(`https://picsum.photos/id/1/${height}/${width}`);
-        const res = await getData.json();
+const body = document.querySelector('body');
 
+const fetchAPI = async function (height, width) {
+   
+    fetch(`https://picsum.photos/id/1/${height}/${width}`).then(res => {
         return res
-    } catch (err) {
-        throw err
-    }
-  
+    }).then(data => {
+        console.log(data)
+
+        const html = `
+            <div class="image">
+                <img src="${data.url}">
+            </div>
+        `
+
+        body.insertAdjacentHTML('beforeend', html)
+    })
 }
 
 fetchAPI(100, 200)
